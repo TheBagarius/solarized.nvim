@@ -40,6 +40,19 @@ added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-trees
 ## Installation
 
 Install via your favourite package manager:
+```lua
+-- If you are using lazy
+    {
+		"shaunsingh/solarized.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require('solarized').set()
+		end,
+	}
+
+```
+
 ```vim
 " If you are using Vim-Plug
 Plug 'shaunsingh/solarized.nvim'
